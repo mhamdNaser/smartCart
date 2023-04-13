@@ -3,38 +3,63 @@
 
 <head>
     <!-- initiate head with meta tags, css and script -->
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/plugins/toastr-master/build/toastr.css">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/plugins/toastr-master/build/toastr.css">
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible"
+        content="ie=edge">
+    <meta name="description"
+        content="">
+    <meta name="keywords"
+        content="">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="https://demo.smartcart.shopping/favicon.png" />
+    <link rel="icon"
+        href="https://demo.smartcart.shopping/favicon.png" />
 
     <!-- font awesome library -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap"
+        rel="stylesheet">
+    {{-- cdn css datatables --}}
+    <link rel="stylesheet"
+        href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
 
     <!-- themekit admin template asstes -->
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/plugins/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/plugins/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/plugins/icon-kit/dist/css/iconkit.min.css">
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/plugins/ionicons/dist/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/plugins/perfect-scrollbar/css/perfect-scrollbar.css">
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/plugins/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/plugins/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/plugins/icon-kit/dist/css/iconkit.min.css">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/plugins/ionicons/dist/css/ionicons.min.css">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/plugins/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/plugins/jquery-ui/jquery-ui.css">
     <!-- Stack array for including inline css or head elements -->
     <title>Dashboard | Admin Panel</title>
 
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/plugins/weather-icons/css/weather-icons.min.css">
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/plugins/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/plugins/weather-icons/css/weather-icons.min.css">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/plugins/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://demo.smartcart.shopping/plugins/owl.carousel/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/plugins/chartist/dist/chartist.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/plugins/chartist/dist/chartist.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+        crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/dist/css/theme.min.css">
-    <link rel="stylesheet" href="https://demo.smartcart.shopping/css/style.css">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/dist/css/theme.min.css">
+    <link rel="stylesheet"
+        href="https://demo.smartcart.shopping/css/style.css">
     <script src="https://demo.smartcart.shopping/src/js/vendor/modernizr-2.8.3.min.js"></script>
 
     <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
@@ -58,25 +83,35 @@
 <body id="app">
     <div class="wrapper">
         <!-- initiate header-->
-        <header class="header-top" header-theme="blue">
+        <header class="header-top"
+            header-theme="blue">
             <div class="container-fluid">
                 <div class="d-flex justify-content-between">
                     <div class="top-menu d-flex align-items-center">
-                        <button type="button" class="btn-icon mobile-nav-toggle d-lg-none"><span></span></button>
-                        <button type="button" id="navbar-fullscreen" class="nav-link"><i
-                                class="ik ik-maximize"></i></button>
+                        <button type="button"
+                            class="btn-icon mobile-nav-toggle d-lg-none"><span></span></button>
+                        <button type="button"
+                            id="navbar-fullscreen"
+                            class="nav-link"><i class="ik ik-maximize"></i></button>
                     </div>
                     <div class="top-menu d-flex align-items-center">
-                        <div class="dropdown dropdown-notifications" style="background: #fff3; border-radius: 50%;">
-                            <a class="nav-link dropdown-toggle" href="#" id="notiDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                                    class="ik ik-bell"></i><span class="badge bg-danger notif-count"
+                        <div class="dropdown dropdown-notifications"
+                            style="background: #fff3; border-radius: 50%;">
+                            <a class="nav-link dropdown-toggle"
+                                href="#"
+                                id="notiDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"><i class="ik ik-bell"></i><span
+                                    class="badge bg-danger notif-count"
                                     data-count='0'></span></a>
                             <div class="dropdown-menu dropdown-menu-right notification-dropdown"
                                 aria-labelledby="notiDropdown">
                                 <h4 class="header">Notifications
                                     <small class="dropdown-toolbar-actions">
-                                        <a href="#" onclick="location.reload()"
+                                        <a href="#"
+                                            onclick="location.reload()"
                                             style="float: right;font-size: 11px;">Mark all
                                             as read</a>
                                     </small>
@@ -89,26 +124,39 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="nav-link ml-10 right-sidebar-toggle d-none"><i
-                                class="ik ik-message-square"></i><span class="badge bg-success">3</span></button>
+                        <button type="button"
+                            class="nav-link ml-10 right-sidebar-toggle d-none"><i class="ik ik-message-square"></i><span
+                                class="badge bg-success">3</span></button>
 
-                        <button type="button" class="nav-link ml-10 d-none" id="apps_modal_btn" data-toggle="modal"
+                        <button type="button"
+                            class="nav-link ml-10 d-none"
+                            id="apps_modal_btn"
+                            data-toggle="modal"
                             data-target="#appsModal"><i class="ik ik-grid"></i></button>
-                        <div class="dropdown" style="background: #fff3; border-radius: 50%;">
+                        <div class="dropdown"
+                            style="background: #fff3; border-radius: 50%;">
 
-                            <a href="#"><img src="#" style="width: 30px;height: 30px;border-radius: 50%;"
+                            <a href="#"><img src="#"
+                                    style="width: 30px;height: 30px;border-radius: 50%;"
                                     alt="">
                             </a>
                         </div>
                         <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                                    class="avatar" src="#" alt=""></a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="profile"><i
-                                        class="ik ik-user dropdown-icon"></i>Profile</a>
-                                <a class="dropdown-item" href="logout"><i
-                                        class="ik ik-power dropdown-icon"></i>Logout</a>
+                            <a class="dropdown-toggle"
+                                href="#"
+                                id="userDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"><img class="avatar"
+                                    src="#"
+                                    alt=""></a>
+                            <div class="dropdown-menu dropdown-menu-right"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item"
+                                    href="profile"><i class="ik ik-user dropdown-icon"></i>Profile</a>
+                                <a class="dropdown-item"
+                                    href="logout"><i class="ik ik-power dropdown-icon"></i>Logout</a>
                             </div>
                         </div>
                     </div>
@@ -119,33 +167,42 @@
             <!-- initiate sidebar-->
             <div class="app-sidebar">
                 <div class="sidebar-header">
-                    <a class="header-brand" href="#">
+                    <a class="header-brand"
+                        href="#">
                         <div class="logo-img text-center">
                             <h4>Smart Cart</h4>
                         </div>
                     </a>
-                    <button type="button" class="nav-toggle"><i data-toggle="expanded"
+                    <button type="button"
+                        class="nav-toggle"><i data-toggle="expanded"
                             class="ik ik-toggle-right toggle-icon"></i></button>
-                    <button id="sidebarClose" class="nav-close"><i class="ik ik-x"></i></button>
+                    <button id="sidebarClose"
+                        class="nav-close"><i class="ik ik-x"></i></button>
                 </div>
 
 
                 <div class="sidebar-content">
                     <div class="nav-container">
-                        <nav id="main-menu-navigation" class="navigation-main">
+                        <nav id="main-menu-navigation"
+                            class="navigation-main">
                             <div class="px-2 py-1">
-                                <input type="text" class="form-control" placeholder="Search..."
+                                <input type="text"
+                                    class="form-control"
+                                    placeholder="Search..."
                                     id="cm_menu_search_input">
                             </div>
-                            <div class="nav-item active" id="dashboard">
+                            <div class="nav-item active"
+                                id="dashboard">
                                 <a href="#"><i class="fas fa-fire"></i><span>Dashboard</span></a>
                             </div>
 
-                            <div class="nav-item " id="dispatcher">
+                            <div class="nav-item "
+                                id="dispatcher">
                                 <a href="#"><i class="fas fa-desktop"></i><span>Dispatcher</span></a>
                             </div>
 
-                            <div class="nav-lavel" id="messages-management">Messages Management</div>
+                            <div class="nav-lavel"
+                                id="messages-management">Messages Management</div>
 
                             <div class="nav-item ">
                                 <a href="#"><i class="fas fa-question"></i><span>Support Tickets</span> <span
@@ -164,7 +221,8 @@
                                 <a href="#"><i class="fas fa-star"></i><span>Customers Feedback</span></a>
                             </div>
 
-                            <div class="nav-lavel" id="customers-management">Customers Management</div>
+                            <div class="nav-lavel"
+                                id="customers-management">Customers Management</div>
 
                             <div class="nav-item ">
                                 <a href="#"><i class="fas fa-users"></i><span>All Customers</span></a>
@@ -174,7 +232,8 @@
                                 <a href="#"><i class="fas fa-braille"></i><span>Customers Points</span></a>
                             </div>
 
-                            <div class="nav-lavel" id="drivers-management">Drivers Management</div>
+                            <div class="nav-lavel"
+                                id="drivers-management">Drivers Management</div>
                             <div class="nav-item ">
                                 <a href="#"><i class="fas fa-car"></i><span>All Drivers</span></a>
                             </div>
@@ -193,7 +252,8 @@
                                 <a href="#"><i class="fas fa-clipboard"></i><span>Notified Drivers</span></a>
                             </div>
 
-                            <div class="nav-lavel" id="merchants-management">Merchants Management</div>
+                            <div class="nav-lavel"
+                                id="merchants-management">Merchants Management</div>
                             <div class="nav-item ">
                                 <a href="#"><i class="fas fa-store"></i><span>All Merchants</span></a>
                             </div>
@@ -202,7 +262,8 @@
                                 <a href="#"><i class="fas fa-store-alt"></i><span>Add New Merchant</span></a>
                             </div>
 
-                            <div class="nav-lavel" id="administrators-management">Administrators Management
+                            <div class="nav-lavel"
+                                id="administrators-management">Administrators Management
                             </div>
 
                             <div class="nav-item ">
@@ -217,53 +278,73 @@
                                 <a href="#"><i class="fas fa-users-cog"></i><span>Activity Logs</span></a>
                             </div>
 
-                            <div class="nav-item has-sub " id="city">
+                            <div class="nav-item has-sub "
+                                id="city">
                                 <a href="#"><i class="fas fa-city"></i><span>Roles &amp; Permissions</span></a>
                                 <div class="submenu-content">
-                                    <a href="#" class="menu-item"><span>Roles List</span> </a>
-                                    <a href="#" class="menu-item "><span>Users Roles</span> </a>
+                                    <a href="#"
+                                        class="menu-item"><span>Roles List</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>Users Roles</span> </a>
                                 </div>
                             </div>
 
-                            <div class="nav-lavel" id="catalog-management">Catalog Management</div>
+                            <div class="nav-lavel"
+                                id="catalog-management">Catalog Management</div>
                             <div class="nav-item has-sub ">
                                 <a href="#"><i class="fas fa-cubes"></i><span>Manage Services</span></a>
                                 <div class="submenu-content">
-                                    <a href="#" class="menu-item"><span>List</span> </a>
-                                    <a href="#" class="menu-item "><span>Add New</span> </a>
+                                    <a href="#"
+                                        class="menu-item"><span>List</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>Add New</span> </a>
                                 </div>
                             </div>
 
-                            <div class="nav-item has-sub " id="manage-categories">
+                            <div class="nav-item has-sub "
+                                id="manage-categories">
                                 <a href="#"><i class="fas fa-sitemap"></i><span>Manage Categories</span></a>
                                 <div class="submenu-content">
-                                    <a href="#" class="menu-item "><span>List (Tree View)</span> </a>
-                                    <a href="#" class="menu-item "><span>List (Table View)</span> </a>
-                                    <a href="#" class="menu-item "><span>List (Sitemap View)</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>List (Tree View)</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>List (Table View)</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>List (Sitemap View)</span> </a>
 
-                                    <a href="#" class="menu-item "><span>Add New</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>Add New</span> </a>
                                 </div>
                             </div>
 
-                            <div class="nav-item has-sub " id="manage-products">
+                            <div class="nav-item has-sub "
+                                id="manage-products">
                                 <a href="#"><i class="fas fa-list"></i><span>Manage Products</span></a>
                                 <div class="submenu-content">
-                                    <a href="#" class="menu-item "><span>List</span> </a>
-                                    <a href="#" class="menu-item "><span>Add New</span> </a>
-                                    <a href="#" class="menu-item "><span>Product Unit</span> </a>
-                                    <a href="#" class="menu-item "><span>Pending Product</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>List</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>Add New</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>Product Unit</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>Pending Product</span> </a>
                                 </div>
                             </div>
 
-                            <div class="nav-item has-sub " id="manage-sample-products">
+                            <div class="nav-item has-sub "
+                                id="manage-sample-products">
                                 <a href="#"><i class="fas fa-tasks"></i><span>Manage Sample Products</span></a>
                                 <div class="submenu-content">
-                                    <a href="#" class="menu-item "><span>List</span> </a>
-                                    <a href="#" class="menu-item "><span>Add New</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>List</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>Add New</span> </a>
                                 </div>
                             </div>
 
-                            <div class="nav-lavel" id="all-orders">Orders Management</div>
+                            <div class="nav-lavel"
+                                id="all-orders">Orders Management</div>
 
                             <div class="nav-item ">
                                 <a href="#"><i class="fas fa-receipt"></i><span>All Orders</span></a>
@@ -275,7 +356,8 @@
 
 
 
-                            <div class="nav-lavel" id="merchant-statements">Merchant Statements</div>
+                            <div class="nav-lavel"
+                                id="merchant-statements">Merchant Statements</div>
 
                             <div class="nav-item ">
                                 <a href="#"><i class="fas fa-dollar-sign"></i><span>Payout Amount</span></a>
@@ -285,7 +367,8 @@
                                 <a href="#"><i class="fas fa-dollar-sign"></i><span>Transactions</span></a>
                             </div>
 
-                            <div class="nav-lavel" id="driver-statements">Driver Statements</div>
+                            <div class="nav-lavel"
+                                id="driver-statements">Driver Statements</div>
 
                             <div class="nav-item ">
                                 <a href="#"><i class="fas fa-money-bill"></i><span>Payout Amount</span></a>
@@ -294,12 +377,15 @@
                             <div class="nav-item has-sub ">
                                 <a href="#"><i class="fas fa-donate"></i><span>Zain Cash</span></a>
                                 <div class="submenu-content">
-                                    <a href="#" class="menu-item"><span>All</span> </a>
-                                    <a href="#" class="menu-item "><span>Open</span> </a>
+                                    <a href="#"
+                                        class="menu-item"><span>All</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>Open</span> </a>
                                 </div>
                             </div>
 
-                            <div class="nav-lavel" id="marketing">Marketing</div>
+                            <div class="nav-lavel"
+                                id="marketing">Marketing</div>
 
                             <div class="nav-item ">
                                 <a href="#"><i class="fas fa-percent"></i><span>Coupons</span></a>
@@ -316,7 +402,8 @@
                                 <a href="#"><i class="fas fa-images"></i><span>Banners Managment</span></a>
                             </div>
 
-                            <div class="nav-lavel" id="feedback">Feedback</div>
+                            <div class="nav-lavel"
+                                id="feedback">Feedback</div>
 
                             <div class="nav-item ">
                                 <a href="#"><i class="fas fa-star"></i><span>Merchant Reviews</span></a>
@@ -330,7 +417,8 @@
                                 <a href="#"><i class="fas fa-star"></i><span>Customer Reviews</span></a>
                             </div>
 
-                            <div class="nav-lavel" id="definitions">Definitions</div>
+                            <div class="nav-lavel"
+                                id="definitions">Definitions</div>
 
                             <div class="nav-item ">
                                 <a href="#"><i class="fas fa-question-circle"></i><span>Faqs</span></a>
@@ -340,7 +428,8 @@
                                 <a href="#"><i class="fas fa-comments"></i><span>Feedback</span></a>
                             </div>
 
-                            <div class="nav-lavel" id="delivery-management">Delivery Management</div>
+                            <div class="nav-lavel"
+                                id="delivery-management">Delivery Management</div>
 
                             <div class="nav-item ">
                                 <a href="#"><i class="fas fa-shipping-fast"></i><span>Tawseleh</span></a>
@@ -358,7 +447,8 @@
                                 <a href="#"><i class="fas fa-dollar-sign"></i><span>Delivery Costs</span></a>
                             </div>
 
-                            <div class="nav-lavel" id="Settings">Settings</div>
+                            <div class="nav-lavel"
+                                id="Settings">Settings</div>
 
                             <div class="nav-item ">
                                 <a href="#"><i class="fa fa-percent"></i><span>Driver Commission</span></a>
@@ -374,36 +464,47 @@
                             <div class="nav-item has-sub ">
                                 <a href="#"><i class="ik ik-globe"></i><span>Country</span></a>
                                 <div class="submenu-content">
-                                    <a href="#" class="menu-item"><span>List</span> </a>
-                                    <a href="#" class="menu-item "><span>Add New</span> </a>
+                                    <a href="#"
+                                        class="menu-item"><span>List</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>Add New</span> </a>
                                 </div>
                             </div>
 
-                            <div class="nav-item has-sub " id="nationalities">
+                            <div class="nav-item has-sub "
+                                id="nationalities">
                                 <a href="#"><i class="fas fa-globe-asia"></i><span>Nationalities</span></a>
                                 <div class="submenu-content">
-                                    <a href="#" class="menu-item"><span>List</span> </a>
-                                    <a href="#" class="menu-item "><span>Add New</span> </a>
+                                    <a href="#"
+                                        class="menu-item"><span>List</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>Add New</span> </a>
                                 </div>
                             </div>
 
-                            <div class="nav-item has-sub " id="city">
+                            <div class="nav-item has-sub "
+                                id="city">
                                 <a href="#"><i class="fas fa-city"></i><span>City</span></a>
                                 <div class="submenu-content">
-                                    <a href="#" class="menu-item"><span>List</span> </a>
-                                    <a href="#" class="menu-item "><span>Add New</span> </a>
+                                    <a href="#"
+                                        class="menu-item"><span>List</span> </a>
+                                    <a href="#"
+                                        class="menu-item "><span>Add New</span> </a>
                                 </div>
                             </div>
 
-                            <div class="nav-item " id="cancel-reasons'">
+                            <div class="nav-item "
+                                id="cancel-reasons'">
                                 <a href="#"><i class="fas fa-ban"></i><span>Cancel Reasons</span></a>
                             </div>
 
-                            <div class="nav-item " id="static-pages">
+                            <div class="nav-item "
+                                id="static-pages">
                                 <a href="#"><i class="fas fa-columns"></i><span>Static Pages</span></a>
                             </div>
 
-                            <div class="nav-item " id="walkthrough-pages">
+                            <div class="nav-item "
+                                id="walkthrough-pages">
                                 <a href="#"><i class="fas fa-paste"></i><span>Walkthrough Pages</span></a>
                             </div>
                         </nav>
@@ -421,53 +522,83 @@
                     }
                 </style>
                 @if (Session::has('success'))
-                <div class="alert alert-success" role="alert">
-                    {{Session::get('success')}}
-                  </div>
+                    <div class="alert alert-success"
+                        role="alert">
+                        {{ Session::get('success') }}
+                    </div>
                 @endif
                 <div class="container-fluid">
-                    <form action="{{route('import_product')}}" method="post" enctype="multipart/form-data">
-                    
+                    <form action="{{ route('import_product') }}"
+                        method="post"
+                        enctype="multipart/form-data">
+
                         @csrf
-                        
-                        
+
+
                         <label class="form-label">Small file input example</label>
-                        <input class="form-control" name="excel_file" type="file">
+                        <input class="form-control"
+                            name="excel_file"
+                            type="file">
                         @error('excel_file')
-                            <p class="text-danger">{{$message}}</p>
+                            <p class="text-danger">{{ $message }}</p>
                         @enderror
-                        <button class="btn btn-primary" type="submit">Upload</button>
+                        <button class="btn btn-primary"
+                            type="submit">Upload</button>
                     </form>
 
-                    <table class="table mt-4">
+                    <table
+                        id="myTable"
+                        class="table">
                         <thead>
-                          <tr>
-                            <th scope="col">Id</th>
-                            <th scope="col">ItemCode</th>
-                            <th scope="col">ItemName</th>
-                            <th scope="col">discount</th>
-                            <th scope="col">price</th>
-                          </tr>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">ItemCode</th>
+                                <th scope="col">ItemName</th>
+                                <th scope="col">discount</th>
+                                <th scope="col">price</th>
+                            </tr>
                         </thead>
-                        <tbody>
-                            @if( count($product))
-                            @foreach( $product as $pro )
-                                <tr>
-                                    <th scope="row">{{ $pro->id }}</th>
-                                    <td>{{ $pro->Code }}</td>
-                                    <td>{{ $pro->Name }}</td>
-                                    <td>{{ $pro->discount }}</td>
-                                    <td>{{ $pro->price }}</td>
-                                </tr>
-                            @endforeach
-                            @else
-                                <tr>
-                                    <td>Data Base Is Empty</td>
-                                </tr>
-                            @endif
-                        </tbody>
-                      </table>
+
+                    </table>
                 </div>
+
+                {{-- cdn jquery --}}
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+                {{-- cdn datatables --}}
+                <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+
+
+                <script>
+                    $('#myTable').DataTable({
+                        processing: true,
+                        serverSide: true,
+                        ajax: "{{ Route('Allproduct') }}",
+                        columns: [{
+                                data: 'id',
+                                name: 'id'
+                            },
+                            {
+                                data: 'Code',
+                                name: 'Code'
+                            },
+                            {
+                                data: 'text',
+                                name: 'text'
+                            },
+                            {
+                                data: 'discount',
+                                name: 'discount'
+                            },
+                            {
+                                data: 'price',
+                                name: 'price'
+                            }
+                            //  ,
+                            //  {data: 'action', name: 'action', orderable: false},
+                        ]
+                        //    order: [[0, 'desc']]
+                    });
+                </script>
 
                 <style>
                     #markerLayer img {
@@ -485,64 +616,87 @@
 
             <!-- initiate chat section-->
             <aside class="right-sidebar">
-                <div class="sidebar-chat" data-plugin="chat-sidebar">
+                <div class="sidebar-chat"
+                    data-plugin="chat-sidebar">
                     <div class="sidebar-chat-info">
                         <h6>Chat List</h6>
                         <form class="mr-t-10">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search for friends ...">
+                                <input type="text"
+                                    class="form-control"
+                                    placeholder="Search for friends ...">
                                 <i class="ik ik-search"></i>
                             </div>
                         </form>
                     </div>
                     <div class="chat-list">
                         <div class="list-group row">
-                            <a href="javascript:void(0)" class="list-group-item" data-chat-user="Gene Newman">
+                            <a href="javascript:void(0)"
+                                class="list-group-item"
+                                data-chat-user="Gene Newman">
                                 <figure class="user--online">
-                                    <img src="https://demo.smartcart.shopping/img/users/1.jpg" class="rounded-circle"
+                                    <img src="https://demo.smartcart.shopping/img/users/1.jpg"
+                                        class="rounded-circle"
                                         alt="">
                                 </figure><span><span class="name">Gene Newman</span> <span
                                         class="username">@gene_newman</span> </span>
                             </a>
-                            <a href="javascript:void(0)" class="list-group-item" data-chat-user="Billy Black">
+                            <a href="javascript:void(0)"
+                                class="list-group-item"
+                                data-chat-user="Billy Black">
                                 <figure class="user--online">
-                                    <img src="https://demo.smartcart.shopping/img/users/2.jpg" class="rounded-circle"
+                                    <img src="https://demo.smartcart.shopping/img/users/2.jpg"
+                                        class="rounded-circle"
                                         alt="">
                                 </figure><span><span class="name">Billy Black</span> <span
                                         class="username">@billyblack</span> </span>
                             </a>
-                            <a href="javascript:void(0)" class="list-group-item" data-chat-user="Herbert Diaz">
+                            <a href="javascript:void(0)"
+                                class="list-group-item"
+                                data-chat-user="Herbert Diaz">
                                 <figure class="user--online">
-                                    <img src="https://demo.smartcart.shopping/img/users/3.jpg" class="rounded-circle"
+                                    <img src="https://demo.smartcart.shopping/img/users/3.jpg"
+                                        class="rounded-circle"
                                         alt="">
                                 </figure><span><span class="name">Herbert Diaz</span> <span
                                         class="username">@herbert</span> </span>
                             </a>
-                            <a href="javascript:void(0)" class="list-group-item" data-chat-user="Sylvia Harvey">
+                            <a href="javascript:void(0)"
+                                class="list-group-item"
+                                data-chat-user="Sylvia Harvey">
                                 <figure class="user--busy">
-                                    <img src="https://demo.smartcart.shopping/img/users/4.jpg" class="rounded-circle"
+                                    <img src="https://demo.smartcart.shopping/img/users/4.jpg"
+                                        class="rounded-circle"
                                         alt="">
                                 </figure><span><span class="name">Sylvia Harvey</span> <span
                                         class="username">@sylvia</span> </span>
                             </a>
-                            <a href="javascript:void(0)" class="list-group-item active"
+                            <a href="javascript:void(0)"
+                                class="list-group-item active"
                                 data-chat-user="Marsha Hoffman">
                                 <figure class="user--busy">
-                                    <img src="https://demo.smartcart.shopping/img/users/5.jpg" class="rounded-circle"
+                                    <img src="https://demo.smartcart.shopping/img/users/5.jpg"
+                                        class="rounded-circle"
                                         alt="">
                                 </figure><span><span class="name">Marsha Hoffman</span> <span
                                         class="username">@m_hoffman</span> </span>
                             </a>
-                            <a href="javascript:void(0)" class="list-group-item" data-chat-user="Mason Grant">
+                            <a href="javascript:void(0)"
+                                class="list-group-item"
+                                data-chat-user="Mason Grant">
                                 <figure class="user--offline">
-                                    <img src="https://demo.smartcart.shopping/img/users/1.jpg" class="rounded-circle"
+                                    <img src="https://demo.smartcart.shopping/img/users/1.jpg"
+                                        class="rounded-circle"
                                         alt="">
                                 </figure><span><span class="name">Mason Grant</span> <span
                                         class="username">@masongrant</span> </span>
                             </a>
-                            <a href="javascript:void(0)" class="list-group-item" data-chat-user="Shelly Sullivan">
+                            <a href="javascript:void(0)"
+                                class="list-group-item"
+                                data-chat-user="Shelly Sullivan">
                                 <figure class="user--offline">
-                                    <img src="https://demo.smartcart.shopping/img/users/2.jpg" class="rounded-circle"
+                                    <img src="https://demo.smartcart.shopping/img/users/2.jpg"
+                                        class="rounded-circle"
                                         alt="">
                                 </figure><span><span class="name">Shelly Sullivan</span> <span
                                         class="username">@shelly</span></span>
@@ -552,13 +706,15 @@
                 </div>
             </aside>
 
-            <div class="chat-panel" hidden>
+            <div class="chat-panel"
+                hidden>
                 <div class="card">
                     <div class="card-header d-flex justify-content-between">
                         <a href="javascript:void(0);"><i class="ik ik-message-square text-success"></i></a>
                         <span class="user-name">John Doe</span>
-                        <button type="button" class="close" aria-label="Close"><span
-                                aria-hidden="true">×</span></button>
+                        <button type="button"
+                            class="close"
+                            aria-label="Close"><span aria-hidden="true">×</span></button>
                     </div>
                     <div class="card-body">
                         <div class="widget-chat-activity flex-1">
@@ -567,7 +723,8 @@
                                     <figure class="user--online">
                                         <a href="#">
                                             <img src="https://demo.smartcart.shopping/img/users/3.jpg"
-                                                class="rounded-circle" alt="">
+                                                class="rounded-circle"
+                                                alt="">
                                         </a>
                                     </figure>
                                     <div class="message-body media-body">
@@ -578,7 +735,8 @@
                                     <figure class="user--online">
                                         <a href="#">
                                             <img src="https://demo.smartcart.shopping/img/users/1.jpg"
-                                                class="rounded-circle" alt="">
+                                                class="rounded-circle"
+                                                alt="">
                                         </a>
                                     </figure>
                                     <div class="message-body media-body">
@@ -589,7 +747,8 @@
                                     <figure class="user--offline">
                                         <a href="#">
                                             <img src="https://demo.smartcart.shopping/img/users/5.jpg"
-                                                class="rounded-circle" alt="">
+                                                class="rounded-circle"
+                                                alt="">
                                         </a>
                                     </figure>
                                     <div class="message-body media-body">
@@ -601,7 +760,8 @@
                                     <figure class="user--online">
                                         <a href="#">
                                             <img src="https://demo.smartcart.shopping/img/users/1.jpg"
-                                                class="rounded-circle" alt="">
+                                                class="rounded-circle"
+                                                alt="">
                                         </a>
                                     </figure>
                                     <div class="message-body media-body">
@@ -612,7 +772,8 @@
                                     <figure class="user--busy">
                                         <a href="#">
                                             <img src="https://demo.smartcart.shopping/img/users/5.jpg"
-                                                class="rounded-circle" alt="">
+                                                class="rounded-circle"
+                                                alt="">
                                         </a>
                                     </figure>
                                     <div class="message-body media-body">
@@ -624,7 +785,8 @@
                                     <figure class="user--online">
                                         <a href="#">
                                             <img src="https://demo.smartcart.shopping/img/users/1.jpg"
-                                                class="rounded-circle" alt="">
+                                                class="rounded-circle"
+                                                alt="">
                                         </a>
                                     </figure>
                                     <div class="message-body media-body">
@@ -634,11 +796,15 @@
                             </div>
                         </div>
                     </div>
-                    <form action="javascript:void(0)" class="card-footer" method="post">
+                    <form action="javascript:void(0)"
+                        class="card-footer"
+                        method="post">
                         <div class="d-flex justify-content-end">
-                            <textarea class="border-0 flex-1" rows="1" placeholder="Type your message here"></textarea>
-                            <button class="btn btn-icon" type="submit"><i
-                                    class="ik ik-arrow-right text-success"></i></button>
+                            <textarea class="border-0 flex-1"
+                                rows="1"
+                                placeholder="Type your message here"></textarea>
+                            <button class="btn btn-icon"
+                                type="submit"><i class="ik ik-arrow-right text-success"></i></button>
                         </div>
                     </form>
                 </div>
@@ -659,18 +825,28 @@
     </div>
 
     <!-- initiate modal menu section-->
-    <div class="modal fade apps-modal" id="appsModal" tabindex="-1" role="dialog"
-        aria-labelledby="appsModalLabel" aria-hidden="true" data-backdrop="false">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i
-                class="ik ik-x-circle"></i></button>
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal fade apps-modal"
+        id="appsModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="appsModalLabel"
+        aria-hidden="true"
+        data-backdrop="false">
+        <button type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"><i class="ik ik-x-circle"></i></button>
+        <div class="modal-dialog modal-dialog-centered"
+            role="document">
             <div class="modal-content">
                 <div class="quick-search">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4 ml-auto mr-auto">
                                 <div class="input-wrap">
-                                    <input type="text" id="quick-search" class="form-control"
+                                    <input type="text"
+                                        id="quick-search"
+                                        class="form-control"
                                         placeholder="Search..." />
                                     <i class="ik ik-search"></i>
                                 </div>
@@ -685,13 +861,21 @@
                                 <a href="#"><i class="ik ik-bar-chart-2"></i><span>Dashboard</span></a>
                             </div>
                             <div class="app-item dropdown">
-                                <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLink"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                                        class="ik ik-command"></i><span>Ui</span></a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                <a href="#"
+                                    class="dropdown-toggle"
+                                    role="button"
+                                    id="dropdownMenuLink"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"><i class="ik ik-command"></i><span>Ui</span></a>
+                                <div class="dropdown-menu"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item"
+                                        href="#">Action</a>
+                                    <a class="dropdown-item"
+                                        href="#">Another action</a>
+                                    <a class="dropdown-item"
+                                        href="#">Something else here</a>
                                 </div>
                             </div>
                             <div class="app-item">

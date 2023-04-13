@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestpruductController;
+use App\Http\Controllers\ViewProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,4 +20,5 @@ Route::get('/', function () {
 
 Route::get('/', [TestpruductController::class, 'index']);
 Route::post('/import_product', [TestpruductController::class, 'store'])->name('import_product');
+Route::get('/Allproduct',[ViewProductController::class,'index'])->name('Allproduct');
 
